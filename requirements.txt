@@ -85,10 +85,6 @@ deezloader
 zipfile38
 bitlyshortener
 geopy
-<<<<<<< HEAD
-
-=======
 validators
 twitter_scraper
 pyaztro
->>>>>>> bf63b8111c612b6fbd7cc73a36547f6e3b5133b4
