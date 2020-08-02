@@ -811,5 +811,16 @@ CMD_HELP.update({
 \n\n`.randompp`\
 \nUsage:Automatically changes your profile picture after one hour. To stop this use .restart.\
 \n\n`.gps` <location name>.\
-\nUsage:Sends you the given location name."   
+\nUsage:Sends you the given location name.\
+\n\n`.ls` <directory>.\
+\nUsage:Get list file inside directory.\
+\n\n<`.modi` or `.trump` or `.cmm` or `.kanna`> <text>\
+\n\nUsage: just for fun.\
+\n\n`.tweet` <username>.<tweet>\
+\nUsage:Create tweet with custom username.\
+\n\n`.hc` **sign**\
+\nExample:`.hc scorpio`\
+\nUsage:Gets your horoscope.\
+\n\n`.twt` **username**\
+\nUsage:Scrap latest tweet from someone."
 })
