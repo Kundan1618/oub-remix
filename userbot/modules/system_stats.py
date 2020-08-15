@@ -194,10 +194,10 @@ async def amireallyalive(alive):
     logo = ALIVE_LOGO
     output = (f"`🔥 Wait, I'm Still Alive Bitch!`\n"
              f"`Telethon`: {version.__version__} \n"
-            
-             f"`Version: Remix {BOT_VER}` \n"
-      
+             f"`Version: Remix {BOT_VER}` \n" 
              f"User 👨‍🚀: @thepsambit \n")
+             
+        
 
              
     if ALIVE_LOGO:
