@@ -15,7 +15,7 @@ import platform
 import sys
 from datetime import datetime
 import psutil
-
+import asyncio
 from userbot import CMD_HELP, ALIVE_NAME, BOT_VER, ALIVE_LOGO, bot
 from userbot.events import register
 
@@ -200,9 +200,18 @@ async def amireallyalive(alive):
              f"User 👨‍🚀: @thepsambit \n"
 
              f"====================================\n")
-    await bot.send_file(alive.chat_id, logo, caption=output)
-    await alive.delete()
-                         
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await bot.send_file(alive.chat_id, logo, caption=output)
+            await alive.delete()
+        except BaseException:
+            await alive.edit(output + "\n\n *`The provided logo is invalid."
+                             "\nMake sure the link is directed to the logo picture`")
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(25)
+        await alive.delete()                
 
 
 
